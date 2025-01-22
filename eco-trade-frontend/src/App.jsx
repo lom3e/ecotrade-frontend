@@ -1,13 +1,23 @@
 import React from 'react';
-import { Button } from '@mui/material';
+import { Button, ThemeProvider, createTheme } from '@mui/material';
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#00bcd4', // Cambia il colore primario
+    },
+  },
+});
 
 function App() {
   return (
-    <div>
-      <Button variant="contained" color="primary">
-        Hello World
-      </Button>
-    </div>
+    <ThemeProvider theme={theme}>
+      <div>
+        <Button variant="contained" color="primary">
+          Hello World
+        </Button>
+      </div>
+    </ThemeProvider>
   );
 }
 
