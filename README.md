@@ -1,1 +1,0 @@
-# EcoTrade-frontend
